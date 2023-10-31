@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Tahoma;
+  font-weight: bolder;
+}
+
+.allimgs {
+  margin: 20px 35%;
+  width: 800px;
+  height: 250px;
+  position: relative;
+}
+
+.allimgs img {
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 1px rgb(190, 189, 189);
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  position: absolute;
+}
+
+.allimgs img.active {
+  opacity: 1;
+}
+
+.slidernum {
+  position: absolute;
+  z-index: 2;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(0, 132, 255);
+}
+
+.allcontrols {
+  margin: 10% 8%;
+  height: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.before {
+  background-color: rgb(0, 132, 255);
+  color: white;
+  width: 20%;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.after {
+  cursor: pointer;
+  padding: 4px;
+  background-color: rgb(0, 132, 255);
+  color: white;
+  width: 20%;
+  height: 25px;
+  text-align: center;
+  margin: 0;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+ul li {
+  background-color: rgb(0, 132, 255);
+  list-style: none;
+  opacity: 0.5;
+  width: 27px;
+  color: white;
+  height: 25px;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.active {
+  opacity: 1;
+}
+
+.next {
+  opacity: 0.5;
+  cursor: no-drop;
+}
